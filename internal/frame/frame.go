@@ -52,6 +52,10 @@ type FullReader interface {
 	ReadFull([]byte) (int, error)
 }
 
+func (f *Frame) Header() frameheader.FrameHeader {
+	return f.header
+}
+
 func readCRC(source FullReader) error {
 	buf := make([]byte, 2)
 	if n, err := source.ReadFull(buf); n < 2 {

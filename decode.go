@@ -227,7 +227,7 @@ func NewDecoder(r io.Reader) (*Decoder, error) {
 		return nil, err
 	}
 	d.sampleRate = freq
-	d.channels = d.frame.NumberOfChannels()
+	d.channels = d.frame.Header().NumberOfChannels()
 
 	if err := d.ensureFrameStartsAndLength(); err != nil {
 		return nil, err
