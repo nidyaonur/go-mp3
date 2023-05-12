@@ -2,7 +2,7 @@
 
 # go-mp3
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/hajimehoshi/go-mp3.svg)](https://pkg.go.dev/github.com/hajimehoshi/go-mp3) 
+[![Go Reference](https://pkg.go.dev/badge/github.com/nidyaonur/go-mp3.svg)](https://pkg.go.dev/github.com/nidyaonur/go-mp3) 
 
 An MP3 decoder in pure Go based on [PDMP3](https://github.com/technosaurus/PDMP3).
 
